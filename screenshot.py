@@ -14,6 +14,7 @@ if not im:
     exit()
 
 store = io.BytesIO()
+im = im.convert('RGB')
 im.save(store, format="jpeg")
 store.seek(0)
 
